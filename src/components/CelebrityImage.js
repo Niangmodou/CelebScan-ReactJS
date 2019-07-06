@@ -1,10 +1,11 @@
 import React from 'react';
 
-const CelebrityImage = () => {
+const CelebrityImage = (props) => {
+    const {imgUrl} = props
     return (
         //{REPLACE WITH AN IMG TAG}
         <div className="Image">
-            <h1>Celeb Image</h1>
+            <img className= "Img" alt="ImageUrl" src={imgUrl}/>
         </div>
     );
 

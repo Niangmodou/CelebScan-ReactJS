@@ -25,7 +25,29 @@ class App extends Component{
             celebrityName: "",
             accuracy: 0
 
+<<<<<<< HEAD
+=======
         }
+    }
+    
+    buttonSumbit = () => {
+        app.models.predict(this.modelId, this.state.urlInput).then(
+        function(response) {
+            let jsonResp = response.outputs[0].data.regions[0].data.concepts[0] //Parsed from Json Response
+            let name = jsonResp.name.charAt(0).toUpperCase() //Capitalize First Letter of Name
+                        + jsonResp.name.slice(1); 
+
+            let percentage = jsonResp.value*100;
+            this.setState({celebrityName: name});
+            this.setState({accuracy: percentage});
+            console.log(name,percentage);
+        },
+        function(err) {
+            alert("Please enter a valid Url")
+            console.log(err)
+>>>>>>> Updatd UI & Fixed Bugs
+        }
+        );
     }
     
     buttonSumbit = () => {
@@ -58,8 +80,13 @@ class App extends Component{
             <div>
                 <Header />
                 <UrlSearch textChange={this.textChange} buttonClick={this.buttonSumbit}/> 
+<<<<<<< HEAD
                 <CelebrityImage />
                 <TextArea />
+=======
+                <CelebrityImage imgUrl={this.state.urlInput}/>
+                <TextArea celebName={this.state.name} />
+>>>>>>> Updatd UI & Fixed Bugs
         </div>
         );
     }
