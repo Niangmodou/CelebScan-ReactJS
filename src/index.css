@@ -1,6 +1,5 @@
 .UrlSearch{
     padding:10px;
-    font-size: 100px;
     height: 52px;
     left: 35px;
     top: 150px;
@@ -8,6 +7,7 @@
 
 .urlBox{
     position: absolute;
+    font-size: 20px;
     width: 45%;
     height: 52px;
     left: 35px;
