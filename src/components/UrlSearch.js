@@ -2,7 +2,12 @@ import React from 'react';
 
 const UrlSearch = () => {
     return (
-        <h1>Url Search Area</h1>
+        <div className="UrlSearch">
+            <form>
+                <input className="urlBox" type='text' placeholder='Enter a url...'></input>
+            </form>
+            
+        </div>
     );
 }
 

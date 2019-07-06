@@ -2,7 +2,7 @@ import React from 'react';
 
 const CelebrityImage = () => {
     return (
-        <h1>CelebrityImage</h1>
+        <h1></h1>
     );
 
 }
