@@ -1,13 +1,26 @@
 .UrlSearch{
     padding:10px;
+    font-size: 100px;
+    height: 52px;
+    left: 35px;
+    top: 150px;
 }
 
 .urlBox{
     position: absolute;
-    width: 50%;
+    width: 45%;
     height: 52px;
     left: 35px;
     top: 150px;
+}
+
+.TextArea{
+    position: absolute;
+    width: 654px;
+    height: 413px;
+    left: 36px;
+    top: 300px;
+
 }
 
 .header{
@@ -17,6 +30,24 @@
     height: 100px;
     left: 0px;
     top: 0px;
+}
+
+.Image{
+    position: absolute;
+    width: 32%;
+    height: 500px;
+    left: 827px;
+    top: 150px;
+    background-color: #f9f1f1;
+}
+
+.button{
+position: absolute;
+width: 198px;
+height: 40px;
+left: 35px;
+top: 232px;
+background-color: #f9f1f1;
 }
 
 .AppTitle{
