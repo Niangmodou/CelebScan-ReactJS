@@ -21,34 +21,43 @@ class App extends Component{
         super();
         this.modelId = "e466caa0619f444ab97497640cefc4dc";
         this.state = { //Used to track the current state of the Url box
-            urlInput: ""
+            urlInput: "",
+            celebrityName: "",
+            accuracy: 0
+
         }
     }
     
     buttonSumbit = () => {
-        app.models.predict(this.modelId, "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg/220px-Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg").then(
+        app.models.predict(this.modelId, this.state.urlInput).then(
         function(response) {
-            console.log(response)
+            let jsonResp = response.outputs[0].data.regions[0].data.concepts[0] //Parsed from Json Response
+            let name = jsonResp.name.charAt(0).toUpperCase() //Capitalize First Letter of Name
+                        + jsonResp.name.slice(1); 
+
+            let percentage = jsonResp.value*100;
+
+            this.setState({celebrityName: name});
+            this.setState({accuracy: percentage});
         },
         function(err) {
+            alert("Please enter a valid Url")
             console.log(err)
         }
         );
     }
 
-    //FUNCTION NEEDS WORK!
     textChange = (event) => {
         let currUrl = event.target.value; //Function used to retrieve the current state of the Url box
+        this.setState({urlInput: currUrl});
         console.log(currUrl);
-        //this.setState((this.urlInput: currUrl));
     }
 
     render(){
         return (
             <div>
-                this.buttonSumbit();
                 <Header />
-                <UrlSearch textChange= {this.textChange}/> 
+                <UrlSearch textChange={this.textChange} buttonClick={this.buttonSumbit}/> 
                 <CelebrityImage />
                 <TextArea />
         </div>
@@ -56,6 +65,5 @@ class App extends Component{
     }
 
 }
-
 
 export default App;
