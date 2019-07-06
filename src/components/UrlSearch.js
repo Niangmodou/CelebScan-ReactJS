@@ -1,12 +1,14 @@
 import React from 'react';
 
-const UrlSearch = ({textChange}) => {
+
+const UrlSearch = (props) => {
+    const {textChange,buttonClick} = props;
     return (
         <div className="UrlSearch">
             <form>
-                <input className="urlBox" type='text' placeholder='Enter a url...'></input>
+                <input onChange={textChange} className="urlBox" type='text' placeholder='Enter a url...'></input>
             </form>
-            <button onChange={textChange} type="button" className="button">Detect</button>
+            <button onClick={buttonClick} type="button" className="button">Detect</button>
         </div>
     );
 }
