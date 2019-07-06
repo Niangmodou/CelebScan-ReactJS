@@ -12,15 +12,20 @@ import TextArea from './components/TextArea';
 // Celebrity Image
 //Text area that describes app and gives celebrity name
 
-const App = () => {
-    return (
-      <div>
-        <Header />
-        <UrlSearch />
-        <CelebrityImage />
-        <TextArea />
-      </div>
-    );
+class App extends React.Componenet{
+    render(){
+
+        return(
+            <div>
+            <Header />
+            <UrlSearch />
+            <CelebrityImage />
+            <TextArea />
+        </div>);
+    }
+
+
 }
+
 
 export default App;
