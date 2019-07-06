@@ -24,6 +24,7 @@ class App extends Component{
         }
     }
 
+    //FUNCTION NEEDS WORK!
     textChange = (event) => {
         let currUrl = event.target.value; //Function used to retrieve the current state of the Url box
         console.log(currUrl);
