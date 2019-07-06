@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import Header from './components/Header';
 import UrlSearch from './components/UrlSearch';
 import CelebrityImage from './components/CelebrityImage';
@@ -12,16 +12,16 @@ import TextArea from './components/TextArea';
 // Celebrity Image
 //Text area that describes app and gives celebrity name
 
-class App extends React.Componenet{
+class App extends Component{
     render(){
-
-        return(
+        return (
             <div>
-            <Header />
-            <UrlSearch />
-            <CelebrityImage />
-            <TextArea />
-        </div>);
+                <Header />
+                <UrlSearch />
+                <CelebrityImage />
+                <TextArea />
+        </div>
+        );
     }
 
 
