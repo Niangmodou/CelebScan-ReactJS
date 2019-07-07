@@ -13,7 +13,7 @@ const TextArea = (props) => {
     }else{
         return (
             <div className="TextArea">
-                <h1>This is has a {percent}% chance of being:</h1>
+                <h1>This has a {percent}% chance of being:</h1>
                 <h1 className="name">{celebName}</h1>
                 <h3>Enter a new Url to try again</h3>
             </div>
