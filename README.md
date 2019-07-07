@@ -5,6 +5,8 @@ celebrity of your choice. The user enters a URL and an image of the url
 is displayed onto the app. A name and a percent accuracy is also returned
 and displayed.
 
+The site can be viewed at https://niangmodou.github.io/CelebScan-ReactJS/
+
 A possible improvement to this app is a facial recignition box may be added that displays onto the returned image.
 
 There are a total of five components within this app: 
