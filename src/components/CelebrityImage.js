@@ -5,7 +5,7 @@ const CelebrityImage = (props) => {
     return (
         //{REPLACE WITH AN IMG TAG}
         <div className="Image">
-            <img className= "Img" alt="ImageUrl" src={imgUrl}/>
+            <img className= "Img"  src={imgUrl}/>
         </div>
     );
 
