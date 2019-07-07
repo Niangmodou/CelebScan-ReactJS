@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CelebScan-ReactJS/static/css/main.708534d2.chunk.css",
+    "main.js": "/CelebScan-ReactJS/static/js/main.d53dfa5f.chunk.js",
+    "main.js.map": "/CelebScan-ReactJS/static/js/main.d53dfa5f.chunk.js.map",
+    "runtime~main.js": "/CelebScan-ReactJS/static/js/runtime~main.1b2d4e9e.js",
+    "runtime~main.js.map": "/CelebScan-ReactJS/static/js/runtime~main.1b2d4e9e.js.map",
+    "static/js/2.135086de.chunk.js": "/CelebScan-ReactJS/static/js/2.135086de.chunk.js",
+    "static/js/2.135086de.chunk.js.map": "/CelebScan-ReactJS/static/js/2.135086de.chunk.js.map",
+    "index.html": "/CelebScan-ReactJS/index.html",
+    "precache-manifest.25c994ffb02ccdbfaa9f09f9c0ea8d2f.js": "/CelebScan-ReactJS/precache-manifest.25c994ffb02ccdbfaa9f09f9c0ea8d2f.js",
+    "service-worker.js": "/CelebScan-ReactJS/service-worker.js",
+    "static/css/main.708534d2.chunk.css.map": "/CelebScan-ReactJS/static/css/main.708534d2.chunk.css.map"
+  }
+}
