@@ -1,4 +1,4 @@
-# Celebrity-App
+# CelebScan-App
 
 CelebScan is a React JS app that uses the Clarifai API to return the name of a 
 celebrity of your choice. The user enters a URL and an image of the url
