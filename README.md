@@ -7,7 +7,8 @@ and displayed.
 
 The site can be viewed at https://niangmodou.github.io/CelebScan-ReactJS/
 
-A possible improvement to this app is a facial recignition box may be added that displays onto the returned image.
+A possible improvement to this app is a facial recignition box may be added 
+that displays onto the returned image and to make the app more responsive.
 
 There are a total of five components within this app: 
 - The Header
